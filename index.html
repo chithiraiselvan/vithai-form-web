@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script  type="text/javascript" src="https://codesandbox.io/public/sse-hooks/sse-hooks.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -77,8 +79,19 @@ padding: 0;
       padding-right: 150px;
     }
 
+    .status-padding {
+      padding-right: 180px;
+    }
+    .status-card {
+      padding: 10px 0;
+    }
+
+    .status-card .date-padding {
+      padding-left: 100px;
+    }
+
     .date-padding {
-      padding-left: 70px;
+      padding-left: 75px;
     }
 
   .bg-img {
@@ -105,8 +118,9 @@ padding: 0;
       <img class="mt-1" src="https://uploads.codesandbox.io/uploads/user/53eb2c21-1661-4e4b-810b-2ea357edb44f/YHfm-vithai-logo.png" height="220px" class="mr-3" alt="...">
       <div class="card-body">
           <div class="mx-auto mt-5" style="width: 450px;">
-            <h1 class="mx-auto" style="width: 400px;">Vithai Charitable Trust</h1>
-            <h3 class="mx-auto" style="width: 450px;">Educational Fund Requisition Form</h3>
+            <h1 class="mx-auto mb-2" style="width: 400px;"><b>விதை அறக்கட்டளை</b></h1>
+            <h3 class="mx-auto" style="width: 380px;">கல்வி நிதியுதவி விண்ணப்பம்</h3>
+            <h6 class="mx-auto" style="width: 300px;">contact: vithai2vithai@gmail.com</h6>
           </div>
       </div>
       <div class="border image-holder mt-4 mr-4">
@@ -119,7 +133,7 @@ padding: 0;
     </div>
     <div class="col-md-12">
       <form>
-        <h3 class="mb-2">Personal Details</h3>
+        <h4 class="mb-3 mt-2">Personal Details</h4>
         <div class="form-group input-group">
           <div class="col-md-6">
             <label class="has-float-label">
@@ -208,7 +222,7 @@ padding: 0;
 
     <div class="col-md-12 mb-3">
       <form>
-        <h3 class="mb-2">Educational Details </h3>
+        <h4 class="mb-3 mt-2">Educational Details </h4>
         <div class="form-group input-group">
           <div class="col-md-6">
             <label class="has-float-label">
@@ -263,6 +277,19 @@ padding: 0;
           </div>
       </form>
       <div class="col-md-12">
+          <div class="card p-1 mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><b>விதிமுறைகள் </b></h5>
+                <p class="card-text">
+                  <small>
+                    <span>1. முழுமையாக பூர்த்தி செய்யப்படாத விண்ணப்பங்கள் பரிசீலனைக்கு எடுத்துக் கொள்ளப்படாது.</span></br>
+                    <span>2. கல்வி நிதியுதவி பெரும் மாணவர்கள், பணம் செலுத்தியதற்கான ரசீதை தவறாது சமர்ப்பிக்க வேண்டும்.</span></br>
+                    <span>3. அனைத்து விண்ணப்பங்களும் பரிசீலிக்கப்பட்டு, தேர்ந்தெடுக்கப்பட்ட மாணவர்களுக்கு மட்டும் அவரை வழிமொழிந்தவர்கள் வழியே தெரிவிக்கப்படும்.</span></br>
+                    <span>4. அறக்கட்டளையின் முடிவே இறுதியானது. </span>
+                  </small>
+                </p>
+              </div>
+            </div>
           <div class="card p-1">
             <div class="card-body singnature-card">
               <p class="card-text">
@@ -274,9 +301,9 @@ padding: 0;
         </div>
     </div>
 
-    <div class="col-md-12 border-top">
+    <div class="col-md-12 border-top mb-3">
       <form>
-        <h3 class="mb-2">Referral / Staff Details </h3>
+        <h4 class="mb-3 mt-2">Referrer Details </h4>
         <div class="form-group input-group">
           <div class="col-md-6">
             <label class="has-float-label">
@@ -318,30 +345,19 @@ padding: 0;
         </div>
     </div>
 
-    <div class="col-md-12">
-        <div class="card m-3">
-            <div class="card-body">
-              <h5 class="card-title">Terms and conditions: </h5>
-              <p class="card-text">
-                <small>
-                  <span>1.The forms wil be analyzed by us and the selected students will be informed through the school referral staff..</span></br>
-                  <span>2.Kindly submit the original receipt of your school fee payment to us without any delay.</span></br>
-                  <span>3.Please fill all the details requested in the from. Incomplete forms will not be considered for sponsorship.</span>
-                </small>
-              </p>
-            </div>
-          </div>
-          <div class="media position-relative border m-3 mb-4 p-1">
-              <div class="card-body">
-                  <div class="mx-auto mb-1" style="width: 450px;">
-                    <small><h6 class="mt-0">"Though fate-divine, shoul make our labour vain</h6>
-                    <h6 class="mt-0">"Effort its labour's sure reward will gain"</h6></small>
-                  </div>
-                <span class=""> vithai2vithai@gmail.com </span>
-                <span class="float-right"> Approval Status</span>
-              </div>
+    <div class="col-md-12 border-top mt-1">
+        <h6 class="mb-3 mt-2">Office Use Only </h6>
+          <div class="card m-3">
+              <div class="card-body status-card">
+                  <p class="card-text">
+                    <small><span class="date-padding"> Date </span></small>
+                    <small><span class="float-right status-padding"> Approval Status </span></small></br>
+                  </p>
+                </div>
             </div>
     <div>
     <!-- End of row div-->
+    <script crossorigin type="text/javascript" src="https://codesandbox.io/static/js/watermark-button.ccc763f75.js"></script>
   </body>
 </html>
+
